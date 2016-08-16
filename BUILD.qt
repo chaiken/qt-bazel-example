@@ -1,7 +1,8 @@
 cc_library(
     name = "qt_core",
-    hdrs = glob(["QtCore/**"]),
-    includes = ["."],
+    hdrs = glob(["usr/include/x86_64-linux-gnu/qt5/QtCore/**"]),
+    includes = ["usr/include/x86_64-linux-gnu/qt5"],
+    srcs = ["usr/lib/x86_64-linux-gnu/libQt5Core.so"],
     linkopts = [
         "-lQt5Core",
     ],
@@ -10,8 +11,9 @@ cc_library(
 
 cc_library(
     name = "qt_widgets",
-    hdrs = glob(["QtWidgets/**"]),
-    includes = ["."],
+    hdrs = glob(["usr/include/x86_64-linux-gnu/qt5/QtWidgets/**"]),
+    includes = ["usr/include/x86_64-linux-gnu/qt5"],
+    srcs = ["usr/lib/x86_64-linux-gnu/libQt5Widgets.so"],
     deps = [":qt_core"],
     linkopts = [
         "-lQt5Widgets",
@@ -21,8 +23,9 @@ cc_library(
 
 cc_library(
     name = "qt_gui",
-    hdrs = glob(["QtGui/**"]),
-    includes = ["."],
+    hdrs = glob(["usr/include/x86_64-linux-gnu/qt5/QtGui/**"]),
+    includes = ["usr/include/x86_64-linux-gnu/qt5"],
+    srcs = ["usr/lib/x86_64-linux-gnu/libQt5Gui.so"],
     deps = [":qt_core"],
     linkopts = [
         "-lQt5Gui",

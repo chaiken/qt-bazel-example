@@ -1,8 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <qt/QtCore/QObject>
-#include <qt/QtWidgets/QMainWindow>
+#include <QtCore/QObject>
+#include <QtWidgets/QMainWindow>
 
 #include "hello_world/ui_mainwindow.h"
 

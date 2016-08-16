@@ -1,5 +1,5 @@
 new_local_repository(
     name = "qt",
-    path = "/usr/include/qt",
+    path = "/srv/stable",
     build_file = "BUILD.qt"
 )
